@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">RunningApp</string>
+
+    <!-- Main activity's resources -->
     <string name="runningContDesc">Futás</string>
     <string name="runningContent">Futás</string>
+    <string name="walkingContDesc">Gyaloglás</string>
+    <string name="walkingContent">Gyaloglás</string>
+    <string name="wrkoutGuideContent">Edzéstervek</string>
+    <string name="wrkoutGuideContDesc">Edzéstervek</string>
+    <string name="profileContent">Profil</string>
+    <string name="profileContDesc">Profil</string>
+    <string name="resultsContent">Eredmények</string>
+    <string name="resultsContDesc">Eredmények</string>
 </resources>
