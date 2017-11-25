@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.szte.runningapp.MainScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/runBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:background="#fd5355"
+            android:contentDescription="@string/runningContDesc"
+            android:visibility="visible"
+            app:srcCompat="@drawable/running"
+            android:onClick="testClick"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/runBtn"
+            android:layout_centerHorizontal="true"
+            android:text="@string/runningContent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
