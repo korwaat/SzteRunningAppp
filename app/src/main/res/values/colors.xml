@@ -3,4 +3,9 @@
     <color name="colorPrimaryDark">#fd5355</color>
     <color name="windowBackground">#fd5355</color>
     <color name="navigationBarColor">#fd5355</color>
+
+    <!-- Circle button colors -->
+    <color name="circleButtonStrokeColor">#000000</color>
+    <color name="circleButtonSolidColor">#747686</color>
+
 </resources>

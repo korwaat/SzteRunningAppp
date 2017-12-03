@@ -1,0 +1,15 @@
+<shape xmlns:anroid="http://schemas.android.com/apk/res/android"
+        anroid:shape="oval">
+    <stroke anroid:color="@color/circleButtonStrokeColor"
+            anroid:width="2dp">
+    </stroke>
+
+    <solid anroid:color="@color/circleButtonSolidColor">
+    </solid>
+
+    <size anroid:width="120dp"
+          anroid:height="120dp">
+    </size>
+
+
+</shape>

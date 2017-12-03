@@ -12,4 +12,10 @@
     <string name="profileContDesc">Profil</string>
     <string name="resultsContent">Eredmények</string>
     <string name="resultsContDesc">Eredmények</string>
+    <string name="stopperStartPauseButton">Start</string>
+    <string name="StartPauseButtonContent01">Pause</string>
+    <string name="StartPauseButtonContent02">Start</string>
+    <string name="Speed">Sebesség:</string>
+    <string name="AvgSpeed">Átl.Sebesség:</string>
+    <string name="distance">Megtett távolság:</string>
 </resources>

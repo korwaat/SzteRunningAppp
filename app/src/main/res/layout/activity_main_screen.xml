@@ -40,7 +40,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
             android:background="#fd5355"
-            android:onClick="testClick"
             android:contentDescription="@string/walkingContDesc"
             android:visibility="visible"
             app:srcCompat="@drawable/walking" />
