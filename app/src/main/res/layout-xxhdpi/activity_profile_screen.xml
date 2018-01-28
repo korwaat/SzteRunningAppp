@@ -10,14 +10,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="32dp"
-        android:layout_marginStart="127dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="33dp"
         android:onClick="showPopUp"
         android:text="@string/profileActivityCreateProfilBtn"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-        android:visibility="visible"
-        android:layout_gravity="center_horizontal" />
+        android:visibility="visible" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/userNamesListView"
@@ -35,15 +34,14 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
         android:text="@string/profileActivityHeaderText"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textSize="28sp"
-        android:visibility="visible"
-        android:layout_gravity="center_horizontal" />
+        android:visibility="visible" />
 
 
 </RelativeLayout>
