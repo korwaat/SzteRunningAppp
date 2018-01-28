@@ -14,111 +14,93 @@
             android:id="@+id/runBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/walkBtn"
-            android:layout_marginTop="35dp"
-            android:background="#fd5355"
-            android:contentDescription="@string/runningContDesc"
-            android:visibility="visible"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="56dp"
+            android:background="#FFFD5355"
             app:srcCompat="@drawable/running" />
 
         <TextView
-            android:id="@+id/runText"
+            android:id="@+id/runTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/runBtn"
             android:layout_below="@+id/runBtn"
-            android:layout_centerHorizontal="true"
-            android:text="@string/runningContent"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:visibility="visible" />
+            android:layout_marginStart="21dp"
+            android:text="@string/runningContDesc" />
 
         <ImageButton
             android:id="@+id/walkBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/runText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:background="#fd5355"
-            android:contentDescription="@string/walkingContDesc"
-            android:visibility="visible"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/runBtn"
+            android:layout_marginEnd="67dp"
+            android:background="#FFFD5355"
             app:srcCompat="@drawable/walking" />
 
         <TextView
-            android:id="@+id/walkingText"
+            android:id="@+id/walkText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/walkBtn"
             android:layout_below="@+id/walkBtn"
-            android:layout_centerHorizontal="true"
-            android:text="@string/walkingContent"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:visibility="visible" />
-
-        <ImageButton
-            android:id="@+id/wrkoutGuide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/walkingText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:background="#fd5355"
-            android:visibility="visible"
-            android:contentDescription="@string/wrkoutGuideContDesc"
-            app:srcCompat="@drawable/wrkoutguide" />
-
-        <TextView
-            android:id="@+id/wrkoutText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/wrkoutGuide"
-            android:layout_centerHorizontal="true"
-            android:text="@string/wrkoutGuideContent"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:visibility="visible" />
+            android:layout_marginStart="19dp"
+            android:text="@string/walkingContDesc" />
 
         <ImageButton
             android:id="@+id/profileBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/wrkoutGuide"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:background="#fd5355"
-            android:visibility="visible"
-            android:contentDescription="@string/runningContDesc"
+            android:layout_alignStart="@+id/runBtn"
+            android:layout_below="@+id/runTextView"
+            android:layout_marginTop="30dp"
+            android:background="#FFFD5355"
             app:srcCompat="@drawable/profile" />
 
         <TextView
             android:id="@+id/profileText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/runTextView"
             android:layout_below="@+id/profileBtn"
-            android:layout_centerHorizontal="true"
-            android:text="@string/profileContent"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:visibility="visible" />
+            android:text="@string/profileContent" />
 
         <ImageButton
             android:id="@+id/resultsBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/profileText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:background="#fd5355"
-            android:contentDescription="resultsContDesc"
-            android:visibility="visible"
+            android:layout_alignStart="@+id/walkBtn"
+            android:layout_alignTop="@+id/profileBtn"
+            android:background="#FFFD5355"
             app:srcCompat="@drawable/results" />
 
         <TextView
             android:id="@+id/resultsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/walkText"
             android:layout_below="@+id/resultsBtn"
-            android:layout_centerHorizontal="true"
-            android:text="@string/resultsContent"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:visibility="visible" />
+            android:text="@string/resultsContent" />
+
+        <ImageButton
+            android:id="@+id/wrkoutGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/profileBtn"
+            android:layout_below="@+id/profileText"
+            android:layout_marginTop="12dp"
+            android:background="#FFFD5355"
+            app:srcCompat="@drawable/wrkoutguide" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/runTextView"
+            android:layout_below="@+id/wrkoutGuide"
+            android:text="@string/wrkoutGuideContent" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

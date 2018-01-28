@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">RunningApp</string>
-
-    <!-- Main activity's resources -->
     <string name="runningContDesc">Futás</string>
     <string name="runningContent">Futás</string>
     <string name="walkingContDesc">Gyaloglás</string>
@@ -18,4 +16,23 @@
     <string name="Speed">Sebesség:</string>
     <string name="AvgSpeed">Átl.Sebesség:</string>
     <string name="distance">Megtett távolság:</string>
+    <string name="profileActivityHeaderText">Profil</string>
+    <string name="profileActivityCreateProfilBtn">Létrehozás</string>
+    <string name="profileNameText">Név</string>
+    <string name="profileAgeText">Kor</string>
+    <string name="profileBodyWeightText">Testsúly(kg)</string>
+    <string name="createProfileBtn">Létrehoz</string>
+    <string name="createProfileCancelBtn">Mégse</string>
+    <string name="distance_string">Megtett távolság: </string>
+    <string name="avg_speed">Átlg sebesség: </string>
+    <string name="bodyHeight">Magasság(cm)</string>
+    <string name="noSelectProfile">Nincs kiválasztva profil!</string>
+    <string name="plsEnableGPS">Kérlek kapcsold be a GPS-t!</string>
+    <string name="errorTryItAgain">Hiba történt, próbáld újra!</string>
+    <string name="overall_distanceTextView">Megtett távolság:</string>
+    <string name="runningTimeStamp">Időbélyeg:</string>
+    <string name="avgSpeedTextView">Átlg sebesség:</string>
+    <string name="burnedKcalTextView">Elégetett kalória:</string>
+    <string name="overallTimeTextView">Teljes idő:</string>
+    <string name="facebook_app_id">2005404192807730</string>
 </resources>

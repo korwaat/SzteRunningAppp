@@ -1,8 +1,8 @@
 package apps.szte.runningapp
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main_screen.*
 
@@ -22,31 +22,32 @@ class MainScreen : AppCompatActivity() {
 
         //Running activity
         runBtn.setOnClickListener {
-            val intent = Intent(this, Activities.RunningActivity::class.java)
+            val intent = Intent(this, RunningActivity::class.java)
             startActivity(intent)
         }
 
         //Walking activity
         walkBtn.setOnClickListener {
-            val intent = Intent(this, Activities.WalkingActivity::class.java)
-            startActivity(intent)
+            //            val intent = Intent(this, WalkingActivity::class.java)
+//            startActivity(intent)
         }
 
         //Workout guide activity
         wrkoutGuide.setOnClickListener {
-
+            //TODO
         }
 
         //Profile activity
         profileBtn.setOnClickListener {
-
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
 
         //Results activity
         resultsBtn.setOnClickListener {
-
+            val intent = Intent(this, ResultsActivity::class.java)
+            startActivity(intent)
         }
 
     }
-
 }
