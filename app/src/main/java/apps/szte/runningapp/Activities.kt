@@ -137,7 +137,7 @@ class RunningActivity : AppCompatActivity(), OnMapReadyCallback {
                     var systemTime = SystemClock.elapsedRealtime()
                     mChrono.stop()
                     pauseButton.isEnabled = false
-                    startButton.isEnabled = true
+                    startButton.isEnabled = false
                     gpsTracker.stopTracking()
                     var firstKey = 0.0
                     var firstValue = 0.0
@@ -167,7 +167,11 @@ class RunningActivity : AppCompatActivity(), OnMapReadyCallback {
                     var burnedKcal = ((12.5 * met) * (((systemTime - base) * 0.001) * 0.016666666666667)).toInt()
                     var currDateStamp = getCurrentTimeStamp()
 
-                    //TODO: checkRecord sql, and toast
+
+                    when (mydb.checkRecord((applicationContext as GlobalEnv).selectedUserName, (systemTime - base), resultArray[0].toInt())) {
+                        1 -> Toast.makeText(this, "Gratulálok! Sikerült egy rekordot megdöntened! Ez egy " + resultArray[0].toInt().toString() + " hosszú futás volt!", Toast.LENGTH_LONG).show()
+                    }
+
                     //INSERT RESULT TO DB
                     mydb.addResult((applicationContext as GlobalEnv).selectedUserName, resultArray[0].toInt(), (systemTime - base), distanceDivTime, burnedKcal, currDateStamp)
 
@@ -201,6 +205,7 @@ class RunningActivity : AppCompatActivity(), OnMapReadyCallback {
                         }
                         loginManager.registerCallback(callbackManager, handler)
                     }
+
                 }
             }
         }

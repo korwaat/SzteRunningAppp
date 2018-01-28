@@ -62,7 +62,7 @@ class DbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
-
+        //TODO..
     }
 
     fun clearTable() {
@@ -134,5 +134,17 @@ class DbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
         cursor.moveToFirst()
 
         return User(cursor.getString(0), cursor.getString(1), cursor.getInt(2), cursor.getString(3))
+    }
+
+    fun checkRecord(userName: String, overallTime: Long, distance: Int): Int {
+        //1 has record
+        val db = this.writableDatabase
+        val CHECK_RECORD = "SELECT * FROM " + TABLE_RESULTS + " WHERE " + USER_ID_IN_GPS + " = '" + userName + "'" + " and " + OVERALL_DISTANCE + " = " + distance + " and " + overallTime + " < " + OVERALL_TIME
+        val cursor = db.rawQuery(CHECK_RECORD, null)
+        //name, weight, age, height
+        if (!cursor.moveToFirst()) {
+            return 1
+        }
+        return 0
     }
 }

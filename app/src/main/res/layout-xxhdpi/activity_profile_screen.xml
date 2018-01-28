@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/createProfileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="127dp"
+        android:onClick="showPopUp"
+        android:text="@string/profileActivityCreateProfilBtn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:visibility="visible"
+        android:layout_gravity="center_horizontal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userNamesListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="54dp"
+        android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/profileActivityHeaderText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="28sp"
+        android:visibility="visible"
+        android:layout_gravity="center_horizontal" />
+
+
+</RelativeLayout>

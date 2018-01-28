@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="360dp"
+    android:background="@color/popupBackGround"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <EditText
+        android:id="@+id/profileNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/profileNameText"
+        android:textSize="19sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/bodyWeightField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/profileBodyWeightText"
+        android:inputType="numberDecimal"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/bodyHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/bodyHeight"
+        android:inputType="numberDecimal"
+        android:textSize="19sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profileAgeText"
+        android:textSize="19sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:visibility="visible" />
+
+    <NumberPicker
+        android:id="@+id/agePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp"
+            android:layout_marginStart="60dp"
+            android:text="@string/createProfileBtn"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/okButton"
+            android:layout_alignBottom="@+id/okButton"
+            android:layout_marginStart="38dp"
+            android:layout_toEndOf="@+id/okButton"
+            android:text="@string/createProfileCancelBtn"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>
